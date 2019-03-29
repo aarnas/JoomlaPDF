@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension
+    type="module"
+    version="3.0"
+    client="site"
+    method="upgrade">
+    <name>PDF parser</name>
+    <description>parses pdf to html</description>
+    <files>
+        <filename module="mod_pdf_parser">mod_pdf_parser.php</filename>
+        <filename>index.html</filename>
+        <filename module="mod_pdf_parser">jquery.js</filename>
+        <filename module="mod_pdf_parser">pdf.js</filename>
+        <filename module="mod_pdf_parser">testSite.php</filename>
+    </files>
+    
+</extension>
