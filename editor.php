@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Editor</title>
-        <button value="Refresh Page" onClick="window.location.reload()">Reload Page</button>
         <input type='file' id='file' onchange='openFile(event)'><br>
+        
         <!-- Make sure the path to CKEditor is correct. -->
         <script src="ckeditor\ckeditor.js"></script>
     </head>
@@ -25,14 +25,10 @@
                     };
                     reader.readAsText(input.files[0]);
 
-                    CKEDITOR.replace( 'editor1' );
+                    CKEDITOR.replace( 'editor1', { on: {'instanceReady': function (evt) { evt.editor.execCommand('maximize'); }}});
 
                     document.getElementById("editor1").style.display = "block";
                 };
-
-                // Replace the <textarea id="editor1"> with a CKEditor
-                // instance, using default configuration.
-                //CKEDITOR.replace( 'editor1' );
             </script>
         </form>
     </body>

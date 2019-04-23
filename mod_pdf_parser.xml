@@ -13,6 +13,7 @@
         <filename module="mod_pdf_parser">jquery.js</filename>
         <filename module="mod_pdf_parser">pdf.js</filename>
         <filename module="mod_pdf_parser">testSite.php</filename>
+        <filename module="mod_pdf_parser">editor.php</filename>
     </files>
     
 </extension>
