@@ -1,4 +1,10 @@
 <?php
+/** @file fileUpload.php
+*
+* This file sends PDF to API and downloads converted HTML
+*
+*/
+
 $c = curl_init();
 if (!function_exists('curl_file_create')) {
     function curl_file_create($filename, $mimetype = '', $postname = '') {
